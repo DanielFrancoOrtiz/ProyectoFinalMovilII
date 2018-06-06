@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "284338864788",
+    "firebase_url": "https://bdmovil-62428.firebaseio.com",
+    "project_id": "bdmovil-62428",
+    "storage_bucket": "bdmovil-62428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284338864788:android:315ff9b6f9584795",
+        "android_client_info": {
+          "package_name": "com.example.appmovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284338864788-dqj84pvof8uehfrsv2du4f39g6infobs.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "284338864788-dqj84pvof8uehfrsv2du4f39g6infobs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6yyxGmCx-aSCtXuvg_h22bidZQvrqVcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

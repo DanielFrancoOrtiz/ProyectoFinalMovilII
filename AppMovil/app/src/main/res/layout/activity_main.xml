@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.google.android.gms.common.SignInButton
+
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correo Electronico"
+        android:onClick="email_buttonClick"
+        />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+
+      <Button
+          android:id="@+id/bntEntrar"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:onClick="bntEntrar_Click"
+          android:text="Entrar" />
+
+      <Button
+          android:id="@+id/bntRegistrar"
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="right"
+          android:onClick="bntRegistrar_Click"
+          android:text="Registrar"
+          android:theme="@style/raisedButton"
+          />
+
+  </LinearLayout>
+
+
+</LinearLayout>
