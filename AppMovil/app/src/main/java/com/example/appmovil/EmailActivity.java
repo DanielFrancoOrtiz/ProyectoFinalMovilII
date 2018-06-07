@@ -58,7 +58,8 @@ public class EmailActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             new DaoUsuario().ConcetWhitFirebase(
                                     new Usuario(
-                                            user.getDisplayName()==null?user.getEmail().split("@")[0]:user.getDisplayName(),
+                                            user.getDisplayName()==null?user.getEmail()
+                                                    .split("@")[0]:user.getDisplayName(),
                                             "Nombre",
                                             user.getEmail(),"*****",
                                             FirebaseInstanceId.getInstance().getToken()));
@@ -66,7 +67,8 @@ public class EmailActivity extends AppCompatActivity {
 
                         } else {
                             Log.w("", "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(EmailActivity.this,"Authentication failed.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(EmailActivity.this,"Authentication failed.",
+                                    Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -87,7 +89,8 @@ public class EmailActivity extends AppCompatActivity {
                                 FirebaseMessaging.getInstance().subscribeToTopic("news");
 
                                 new DaoUsuario().ConcetWhitFirebase( new Usuario(
-                                        user.getDisplayName()==null?user.getEmail().split("@")[0]:user.getDisplayName(),
+                                        user.getDisplayName()==null?user.getEmail().
+                                                split("@")[0]:user.getDisplayName(),
                                         "Nombre",
                                         user.getEmail(),"*****",
                                         FirebaseInstanceId.getInstance().getToken()));

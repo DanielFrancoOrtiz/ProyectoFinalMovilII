@@ -203,6 +203,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
         mAuth.signInWithCredential(credential)
@@ -211,7 +212,8 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             FirebaseUser user = mAuth.getCurrentUser();
-                            if(!findUserByUser(new Usuario(user.getDisplayName(),FirebaseInstanceId.getInstance().getToken()))){
+                            if(!findUserByUser(new Usuario(user.getDisplayName(),
+                                    FirebaseInstanceId.getInstance().getToken()))){
                                 new DaoUsuario().ConcetWhitFirebase(
                                         new Usuario(user.getDisplayName(),
                                                 user.getDisplayName(),

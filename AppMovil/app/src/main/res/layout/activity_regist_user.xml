@@ -67,7 +67,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Aceptar"
-            android:onClick="bntAceptar_Click"/>
+            android:onClick="bntAceptar_Click"
+            android:theme="@style/raisedButton"
+            />
 
         <Button
             android:id="@+id/btnCancel"
@@ -75,7 +77,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Cancelar"
-            android:onClick="bntCancel_Click"/>
+            android:onClick="bntCancel_Click"
+            android:theme="@style/raisedButton"
+            />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

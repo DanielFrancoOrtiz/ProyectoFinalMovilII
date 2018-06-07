@@ -39,7 +39,9 @@
         android:text="Entrar"
         app:layout_constraintTop_toBottomOf="@+id/bntCrear"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        android:theme="@style/raisedButton"
+        />
 
     <Button
         android:id="@+id/bntCrear"
@@ -50,7 +52,9 @@
         android:text="Crear"
         app:layout_constraintTop_toBottomOf="@+id/txtEAPass"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp" />
+        tools:layout_editor_absoluteX="0dp"
+        android:theme="@style/raisedButton"
+        />
 
 
 </android.support.constraint.ConstraintLayout>

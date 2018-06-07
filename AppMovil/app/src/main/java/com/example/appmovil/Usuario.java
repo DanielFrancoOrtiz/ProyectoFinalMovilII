@@ -1,7 +1,6 @@
 package com.example.appmovil;
+
 public class Usuario {
-
-
     public String nombre;
     public String user;
     public String email;

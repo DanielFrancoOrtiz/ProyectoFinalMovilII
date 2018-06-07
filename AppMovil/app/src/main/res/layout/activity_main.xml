@@ -8,18 +8,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <com.google.android.gms.common.SignInButton
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.common.SignInButton
 
-        android:id="@+id/sign_in_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/email_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Correo Electronico"
-        android:onClick="email_buttonClick"
-        />
+            android:id="@+id/sign_in_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/email_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Correo Electronico"
+            android:onClick="email_buttonClick"
+            android:theme="@style/raisedButton"
+            />
+    </LinearLayout>
+
+
 
     <EditText
         android:id="@+id/txtName"
@@ -48,7 +55,9 @@
           android:layout_height="wrap_content"
           android:layout_gravity="left"
           android:onClick="bntEntrar_Click"
-          android:text="Entrar" />
+          android:text="Entrar"
+          android:theme="@style/raisedButton"
+          />
 
       <Button
           android:id="@+id/bntRegistrar"
